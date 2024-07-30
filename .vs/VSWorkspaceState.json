@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\img",
+    "\\img\\bg",
+    "\\img\\buttons"
   ],
-  "SelectedNode": "\\about.html",
+  "SelectedNode": "\\img\\bg\\bgRom.jpg",
   "PreviewInSolutionExplorer": false
 }

@@ -11,250 +11,179 @@
 <style>
     html {
         background-image: url(img/bg/bgstar.gif);
-        font-family: Ms Gothic;
-        a {
-        color: black;
-        }
+        font-family: Verdana;
+        font-weight: 100;
+        a { color: black; }
     }
 
     body {
-        margin-left: 15%;
-        margin-right: 15%;
-        margin-top: 3%;
-        margin-bottom: 3%;
+        width: 1000px;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        padding: 0;
     }
-
-
-
-
-    *{
-        box-sizing: border-box;
+    
+    .main{
+        width: 1000px;
+        border: 2px white solid;
+        border-top: none;
+        border-bottom: none;
+        display: flex;
+        flex-flow: column;
+        height: 100%;
     }
-
-    .header1{
+    
+    
+    .header {
+        width: 1000px;
+        height: 150px;
+        margin: 0 auto;
         text-align: left;
-        font-size: 1.5vw;
-        float: left;
-        width: 50%;
-        height: 15vw;
-        padding-top: 0.1vw;
-        padding-bottom: 0.1vw;
-        padding-left: 3%;
-        padding-right: 3%;
-        border: black 7px groove;
+        background-image: url(img/bg/bgJE.jpg);
+    }
+    
+    .navBar {
+        width: 1000px;
+        height: 100%;
+        display: flex;
+        justify-content: left;
+        margin: 0 auto;
+        gap: 0px;
+        background-color: #3e3b2f;
+    }
+    
+    .navButton {
+        background-color: #3e3b2f;
+        padding: 16px;
+        color: white;
+        border: none;
+    }
+    
+    .navButton:hover{
+        cursor: pointer;
+        box-shadow:0 -5px 0 #3e3b2f;
+    }
+    
+    
+    .layoutSection {
+        width: 1000px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        word-break: break-word;
+        text-justify: inter-word;
     }
 
-    .header2{
-        text-align: right;
-        font-size: 1.5vw;
-        float: right;
-        width: 50%;
-        height: 15vw;
-        padding-top: 0.1vw;
-        padding-bottom: 0.1vw;
-        padding-left: 3%;
-        padding-right: 3%;
-        border: black 7px groove;
+    .center { 
+        width: 768px;
+        background-color: #241f0b;
+        padding: 16px;
+        color: white;
     }
-
-    .headers::after{
-        content: "";
-        clear: both;
-        display: table;
+    
+    .quote1 {
+        font-style: italic;
+        font-size:15px;
+        text-justify: inter-word;
     }
-
-    .reel1{
-        text-align: left;
-        font-size: 1.5vw;
-        float: left;
-        width: 50%;
-        height: 25vw;
-        padding: 1%;
-        border: black 7px groove;
+    
+    .quote2 {
+        font-style: italic;
+        font-size:15px;
+        text-justify: inter-word;
     }
-
-    .reel2{
-        text-align: right;
-        font-size: 1.5vw;
-        float: right;
-        width: 50%;
-        height: 25vw;
-        padding: 1%;
-        border: black 7px groove;
+    
+    .sidebar {
+        background-color: #241f0b; 
+        width: 232px;
+        padding: 16px;
+        color: white;
     }
-
-    .reels::after{
-        content: "";
-        clear: both;
-        display: table;
+    
+    .links {
+        font-size:15px; color: white;
     }
-
-    .reelIntro {
-        background-image: url(img/bg/bgTs2.jpg);
-        text-align: center;
-        border: black 7px groove;
-    }
-
-    .quote1{
-        text-align: left;
-        font-size: 1.2vw;
-        float: left;
-        width: 50%;
-        padding: 1%;
-        border: black 7px groove;
-    }
-
-    .quote2{
-        text-align: right;
-        font-size: 1.2vw;
-        float: right;
-        width: 50%;
-        padding: 1%;
-        border: black 7px groove;
-    }
-
-    .quotes::after{
-        content: "";
-        clear: both;
-        display: table;
-    }
-
-    .footers{
-        text-align: left;
-        font-size: 1.2vw;
-        float: right;
-        padding: 1%;
-        border: black 7px groove;
-    }
-
-    .footer1{
-        text-align: center;
-        line-height: 6vw;
-        font-size: 1.2vw;
-        float: right;
-        padding: 1%;
-        width: 12.25%;
-        height: 6vw;
-    }
-    .footer2{
-        text-align: center;
-        line-height: 6vw;
-        font-size: 1.2vw;
-        float: right;
-        padding: 1%;
-        width: 12.25%;
-        height: 6vw;
-    }
-    .footer3{
-        text-align: center;
-        line-height: 6vw;
-        font-size: 1.2vw;
-        float: right;
-        padding: 1%;
-        width: 12.25%;
-        height: 6vw;
-    }
-    .footer4{
-        text-align: center;
-        line-height: 6vw;
-        font-size: 1.2vw;
-        float: right;
-        padding: 1%;
-        width: 12.25%;
-        height: 6vw;
-    }
-    .footer5{
-        text-align: left;
-        font-size: 1.2vw;
-        float: right;
-        padding: 1%;
-        width: 50%;
-        height: 6vw;
-    }
-
-    .footers::after{
-        content: "";
-        clear: both;
-        display: table;
-    }
-
-}
-
+    
 </style>
 
 <body>
+    <section class="main">
+        <section class="header">
+        </section>
 
-    <!-- HEADER -->
-    <div id = "headers">
-        <div class = "header1" style="background-color:#f0cb9b">
-            <h1>John Elliott</h1>
-            <h3>Composer and Sound Designer<h3>
+        <nav class="navBar">
+            <a class="navButton" href="index.html" style="background-color:#3e3b2f; box-shadow:0 -5px 0 #3e3b2f;"><b>Home</b></a>
+            <a class="navButton" href="about.html"><b>About</b></a>
+            <a class="navButton" href="portfolio.html"><b>Portfolio</b></a>
 
-        </div>
+        </nav>      
 
-        <div class = "header2" style="background-color:#f0cb9b">
-            <h2><a href="index.html">Home</a></h2>
-            <pr><a href="about.html">About</a></pr><br></br>
-            <pr><a href="portfolio.html">Portfolio</a></pr>
-        </div>
-    </div>
+        <section class="layoutSection">
+            <div class="center">
+               <div id = "reels">
+                   <pr style="font-size:38px;">Demo Reels<br></pr>
+                    <div class = "reel1">
+                        <pr style="font-size:23px;">Music</pr>
+                        <iframe src='https://player.vimeo.com/video/317489269' height = 410px width = 100% frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                    </div>
+                    <div class = "reel2">
+                        <pr style="font-size:23px;">Sound Design</pr>
+                        <iframe src='https://player.vimeo.com/video/484560321' height = 410px width = 100% frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                    </div>
+                </div>
+                
+                <div class = "quotes" style = "text-justify: inter-word;">
+                    <br>
+                    <pr style="font-size:38px;">Quotes</pr>
+                    <div class = "quote1">
+                        <pr><i>John always had an astounding capacity for multi and interdisciplinary work that complements his solid education on music composition as well as his knowledge in programming and videogames. He also shows a remarkable understanding of the dialectic of historical movements and their implications in technology and art.<br>- Rui Penha (PhD), composer, professor at ESMAE and researcher at INESC TEC </i> </pr>
+                    </div>
+                    <br>
+                    <div class = "quote2">
+                        <pr><i>John has composed noteworthy musical works, as well as installations and music for videogames, demonstrating an ease at relating his musical work with other media. He creates artistic works that show this enthusiasm and does interesting musicological research which he relates to his practical work.<br>
+                        - Carlos Caires (PhD), composer, professor at ESML and researcher at CESEM</i> </pr>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sidebar">
+                <img src="img/profile.png" height="200px" width="200px">
+                <pr style="font-size:30px;">John Elliott<br></pr>
+                <pr style="font-size:15px; color: dimgray;"><small>Lisbon, Portugal<br></small>
+                <pr style="font-size:15px; color: white;"><small>Composer and <br>Sound Designer</small></pr>
+                    
+            <br> <br>
+            <dev class="links">       
+                <div class = "footer1">
+                    <pr style="color: white;"><small>johnelliottsound@<br>protonmail.com</small></pr>
+                </div>
 
-    <hr style="visibility: hidden"><hr style="visibility: hidden"><hr style="visibility: hidden">
+                <br>
 
-    <!-- REELS -->
-    <div class = "reelIntro">
-        <h1>Demo Reels</h1>
-    </div>
+                <div class = "footer1" style="color: white;">
+                    <a style="color: white;" href="https://soundcloud.com/johnelliottmusic"><small>Soundcloud</small></a>
+                </div>
 
-    <div id = "reels">
-        <div class = "reel1" style="background-color:white">
-            <iframe src='https://player.vimeo.com/video/317489269' height = 100% width = 100% frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-        </div>
-        <div class = "reel2" style="background-color:white">
-            <iframe src='https://player.vimeo.com/video/317489269' height = 100% width = 100% frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-        </div>
-    </div>
+                <div class = "footer2">
+                    <a style="color: white;" href="https://www.linkedin.com/in/jo%C3%A3o-ara%C3%BAjo-john-elliott/"><small>LinkedIn</small></a>
+                </div>
 
-    <hr style="visibility: hidden"><hr style="visibility: hidden"><hr style="visibility: hidden">
+                <div class = "footer3">
+                    <a style="color: white;" href="https://x.com/JohnElliottComp"><small>X/Twitter</small></a>
+                </div>
 
-    <!-- QUOTES -->
-    <div id = "quotes">
-        <div class = "quote1" style="background-color:#f0cb9b">
-            <pr><i>John always had an astounding capacity for multi and interdisciplinary work that complements his solid education on music composition as well as his knowledge in programming and videogames. He also shows a remarkable understanding of the dialectic of historical movements and their implications in technology and art.<br>- Rui Penha (PhD), composer, professor at ESMAE and researcher at INESC TEC </i> </pr>
-        </div>
-
-        <div class = "quote2" style="background-color:#f0cb9b">
-            <pr><i>John always had an astounding capacity for multi and interdisciplinary work that complements his solid education on music composition as well as his knowledge in programming and videogames. He also shows a remarkable understanding of the dialectic of historical movements and their implications in technology and art.<br>- Rui Penha (PhD), composer, professor at ESMAE and researcher at INESC TEC </i> </pr>
-        </div>
-    </div>
+                <div class = "footer4">
+                    <a style="color: white;" href="https://mastodon.gamedev.place/@johnelliott"><small>Mastodon</small></a>
+                </div>
+        </section>
+    </section>
     
-    <hr style="visibility: hidden"><hr style="visibility: hidden"><hr style="visibility: hidden">
-
-    <!-- QUOTES -->
-    <div id = "footers">
-        <div class = "footer1" style="color: white;">
-            <a style="color: white;" href="https://soundcloud.com/johnelliottmusic">Soundcloud</a>
-        </div>
-
-        <div class = "footer2">
-            <a style="color: white;" href="https://mastodon.gamedev.place/@johnelliott">Mastodon</a>
-        </div>
-
-        <div class = "footer3">
-            <a style="color: white;" href="https://x.com/JohnElliottComp">Twitter</a>
-        </div>
-
-        <div class = "footer4">
-            <a style="color: white;" href="https://www.linkedin.com/in/jo%C3%A3o-ara%C3%BAjo-john-elliott/">LinkedIn</a>
-        </div>
-
-        <div class = "footer5">
-            <pr style="color: white;"> John Elliott <br> Composer and Sound Designer <br> Email: johnelliottsound@protonmail.com </pr>
-        </div>
-
-    </div>
-
-
-
+    
+    
+    
+    
 </body>
 </html>

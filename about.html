@@ -5,73 +5,150 @@
     <meta charset="utf-8" />
     <meta name="description" content="Personal website for the composer and sound designer John Elliott">
     <meta name="author" content="John Elliott">
-    <title>"John Elliott - Home"</title>
+    <title>"John Elliott - About"</title>
 </head>
 
 <style>
     html {
         background-image: url(img/bg/bgstar.gif);
-        font-family: Ms Gothic;
+        font-family: Verdana;
+        font-weight: 100;
+        a { color: black; }
     }
 
     body {
-        margin: 50px;
+        width: 1000px;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        padding: 0;
     }
-
-    *{
-        box-sizing: border-box;
+    
+    .main{
+        width: 1000px;
+        border: 2px white solid;
+        border-top: none;
+        border-bottom: none;
+        display: flex;
+        flex-flow: column;
+        height: 100%;
     }
-
-    .header1{
+    
+    
+    .header {
+        width: 1000px;
+        height: 150px;
+        margin: 0 auto;
         text-align: left;
-        font-size: 1.5vw;
-        float: left;
-        width: 50%;
-        height: 15vw;
-        padding-top: 0.1vw;
-        padding-bottom: 0.1vw;
-        padding-left: 3%;
-        padding-right: 3%;
-        border: black 7px groove;
+        background-image: url(img/bg/bgJE.jpg);
+    }
+    
+    .navBar {
+        width: 1000px;
+        height: 100%;
+        display: flex;
+        justify-content: left;
+        margin: 0 auto;
+        gap: 0px;
+        background-color: #3e3b2f;
+    }
+    
+    .navButton {
+        background-color: #3e3b2f;
+        padding: 16px;
+        color: white;
+        border: none;
+    }
+    
+    .navButton:hover{
+        cursor: pointer;
+        box-shadow:0 -5px 0 #3e3b2f;
+    }
+    
+    
+    .layoutSection {
+        width: 1000px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        word-break: break-word;
+        text-justify: inter-word;
     }
 
-    .header2{
-        text-align: right;
-        font-size: 1.5vw;
-        float: right;
-        width: 50%;
-        height: 15vw;
-        padding-top: 0.1vw;
-        padding-bottom: 0.1vw;
-        padding-left: 3%;
-        padding-right: 3%;
-        border: black 7px groove;
+    .center { 
+        width: 768px;
+        background-color: #241f0b;
+        padding: 16px;
+        color: white;
     }
-
-    .headers::after{
-        content: "";
-        clear: both;
-        display: table;
+    
+    .sidebar {
+        background-color: #241f0b; 
+        width: 232px;
+        padding: 16px;
+        color: white;
     }
-}
-
+    
+    .links {
+        font-size:15px; color: white;
+    }
+    
 </style>
 
 <body>
-    <div id = "headers"
-        <div class = "header1" style="background-color:#f0cb9b">
-            <h1>John Elliott</h1>
-            <h3>Composer and Sound Designer<h3>
+    <section class="main">
+        <section class="header">
+        </section>
 
-        </div>
+        <nav class="navBar">
+            <a class="navButton" href="index.html" ><b>Home</b></a>
+            <a class="navButton" href="about.html" style="background-color:#3e3b2f; box-shadow:0 -5px 0 #3e3b2f;"><b>About</b></a>
+            <a class="navButton" href="portfolio.html"><b>Portfolio</b></a>
 
-        <div class = "header2" style="background-color:#f0cb9b">
-            <pr><a href="index.html">Home</a></pr>
-            <h2><a href="about.html">About</a></h2>
-            <pr><a href="portfolio.html">Portfolio</a></pr>
-        </div>
-    </div>
-</div>
+        </nav>      
 
+        <section class="layoutSection">
+            <div class="center">
+               
+            </div>
+            
+            <div class="sidebar">
+                <img src="img/profile.png" height="200px" width="200px">
+                <pr style="font-size:30px;">John Elliott<br></pr>
+                <pr style="font-size:15px; color: dimgray;"><small>Lisbon, Portugal<br></small>
+                <pr style="font-size:15px; color: white;"><small>Composer and <br>Sound Designer</small></pr>
+                    
+            <br> <br>
+            <dev class="links">       
+                <div class = "footer1">
+                    <pr style="color: white;"><small>johnelliottsound@<br>protonmail.com</small></pr>
+                </div>
+
+                <br>
+
+                <div class = "footer1" style="color: white;">
+                    <a style="color: white;" href="https://soundcloud.com/johnelliottmusic"><small>Soundcloud</small></a>
+                </div>
+
+                <div class = "footer2">
+                    <a style="color: white;" href="https://www.linkedin.com/in/jo%C3%A3o-ara%C3%BAjo-john-elliott/"><small>LinkedIn</small></a>
+                </div>
+
+                <div class = "footer3">
+                    <a style="color: white;" href="https://x.com/JohnElliottComp"><small>X/Twitter</small></a>
+                </div>
+
+                <div class = "footer4">
+                    <a style="color: white;" href="https://mastodon.gamedev.place/@johnelliott"><small>Mastodon</small></a>
+                </div>
+        </section>
+    </section>
+    
+    
+    
+    
+    
 </body>
 </html>
